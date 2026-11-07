@@ -1,0 +1,38 @@
+{
+  "name": "dsh-prts-startup",
+  "version": "1.6.2",
+  "private": true,
+  "description": "黑白灰为主、普瑞赛斯异常段带红色交互报错弹窗与半脸 CG 肖像的 PRTS 前文明启动序列：中文界面、英文女声播报、CC0 音效、神经握手与记忆碎片选择。",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "THIRD-PARTY-NOTICES.md",
+    "src",
+    "scripts",
+    "assets"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

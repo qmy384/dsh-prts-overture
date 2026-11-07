@@ -1,0 +1,4 @@
+# dsh-prts-startup bundle: one Host row owns the Client splash overlay.
+- insert:
+    - id: dsh-prts-startup
+      name: dsh-prts-startup
